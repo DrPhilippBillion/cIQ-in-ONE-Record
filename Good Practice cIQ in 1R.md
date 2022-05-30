@@ -58,11 +58,10 @@ FIW/FOW on shipment or piece level
 
 # Data use and target process
 
-## Matching table
 
+# Matching Table FOW
 | Element to capture                                   | Mandatory/optonal | ONE Record |
 | ---------------------------------------------------- | ----------------- | ---------- |
-| **FOW**                                              |                   |            |
 | Transferring party                                   | M                 | party providing the *Event*; if the data provider is not the party performing the operational transaction, the the data field *Event/performedBy* of the type *Company* is to be used|
 | Receiving party  (Using standard Cargo iQ code)      | M                 | ??         |
 | AWB number                                           | M                 | *Waybill/waybillNumber* with *Waybill/waybillType=Master* via *bookingOption*, *bookingOptionRequest*, *Shipment*, and *Piece*       |
@@ -83,9 +82,11 @@ FIW/FOW on shipment or piece level
 | ETD or STD date and timestamp at the event time      | M                 | ??         |
 | Handover location point (standard airport locations) | m                 | ?see Warehouse Airport Code         |
 | Geolocation                                          | O                 | *Geolocation/latitude* and *Geolocation/longitude* via *Location/Geolocation*, *TransportMovement/departureLocation* and *Piece*        |          |
-|                                                      |                   |            |
-|                                                      |                   |            |
-| **FIW**                                              |                   |            |
+
+## Matching table FIW
+
+| Element to capture                                   | Mandatory/optonal | ONE Record |
+| ---------------------------------------------------- | ----------------- | ---------- |
 | Transferring party                                   | M                 | \*         |
 | Receiving party  (Using standard Cargo iQ code)      | M                 | \*         |
 | AWB number                                           | M                 | \*         |
