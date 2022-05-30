@@ -59,7 +59,7 @@ FIW/FOW on shipment or piece level
 # Data use and target process
 
 
-# Matching Table FOW
+## Matching Table FOW
 | Element to capture                                   | Mandatory/optonal | ONE Record |
 | ---------------------------------------------------- | ----------------- | ---------- |
 | Transferring party                                   | M                 | party providing the *Event*; if the data provider is not the party performing the operational transaction, the the data field *Event/performedBy* of the type *Company* is to be used|
