@@ -63,7 +63,7 @@ FIW/FOW on shipment or piece level
 | Element to capture                                   | Mandatory/optonal | ONE Record |
 | ---------------------------------------------------- | ----------------- | ---------- |
 | Transferring party                                   | M                 | party providing the *Event*; if the data provider is not the party performing the operational transaction, the the data field *Event/performedBy* of the type *Company* is to be used|
-| Receiving party  (Using standard Cargo iQ code)      | M                 | ??         |
+| Receiving party  (Using standard Cargo iQ code)      | M                 | to be cleared at cIQ!!!        |
 | AWB number                                           | M                 | *Waybill/waybillNumber* with *Waybill/waybillType=Master* via *bookingOption*, *bookingOptionRequest*, *Shipment*, and *Piece*       |
 | House AWB number                                     | O                 | *Waybill/waybillNumber* with *Waybill/waybillType=House* via *bookingOption*, *bookingOptionRequest*, *Shipment*, and *Piece*       |
 | Piece level identifier                               | O                 | *Piece/uPID*        |
