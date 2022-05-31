@@ -63,7 +63,7 @@ FIW/FOW on shipment or piece level
 | Element to capture                                   | Mandatory/optonal | ONE Record |
 | ---------------------------------------------------- | ----------------- | ---------- |
 | Transferring party                                   | M                 | party providing the *Event*; if the data provider is not the party performing the operational transaction, the the data field *Event/performedBy* of the type *Company* is to be used|
-| Receiving party  (Using standard Cargo iQ code)      | M                 | to be cleared at cIQ!!!        |
+| Receiving party  (Using standard Cargo iQ code)      | M                 | **exact approach and application to be cleared at cIQ**        |
 | AWB number                                           | M                 | *Waybill/waybillNumber* with *Waybill/waybillType=Master* via *bookingOption*, *bookingOptionRequest*, *Shipment*, and *Piece*       |
 | House AWB number                                     | O                 | *Waybill/waybillNumber* with *Waybill/waybillType=House* via *bookingOption*, *bookingOptionRequest*, *Shipment*, and *Piece*       |
 | Piece level identifier                               | O                 | *Piece/uPID*        |
@@ -73,14 +73,14 @@ FIW/FOW on shipment or piece level
 | Flight number                                        | M                 | *TransportMovement/transportIdentfier* via *Piece*     |
 | Flight date                                          | M                 | *TransportMovement/departureDate* via *Piece*         |
 | Warehouse airport code                               | M                 | *Location/locationCode*, *Location/locationType=IATA AirportCode*,  via *TransportMovement/departureLocation* and *Piece*        |
-| Station status                                       | T,O,D             | ??         |
-| Equipment type (ULD, Cart/Dolly)                     | M                 | ?*ULD/uldTypeCode*         |
+| Station status                                       | T,O,D             | **exact approach and application to be cleared at cIQ**         |
+| Equipment type (ULD, Cart/Dolly)                     | M                 | *ULD/uldTypeCode*         |
 | Equipment ID code                                    | M                 | *ULD/serialNumber*         |
-| Equipment serviceability/checks                      | O                 | ??         |
+| Equipment serviceability/checks                      | O                 | **exact approach and application to be cleared at cIQ**         |
 | Consignment type (complete, split, part, divided)    | M                 | implicit on ONE Record (Are all pieces on same ULD?)  |
 | FOW actual date and timestamp                        | M                 | *Event/dateTime*        |
-| ETD or STD date and timestamp at the event time      | M                 | ??         |
-| Handover location point (standard airport locations) | m                 | ?see Warehouse Airport Code         |
+| ETD or STD date and timestamp at the event time      | M                 | **exact approach and application to be cleared at cIQ**         |
+| Handover location point (standard airport locations) | m                 | Handover location (e.g. Neutral handover area)         |
 | Geolocation                                          | O                 | *Geolocation/latitude* and *Geolocation/longitude* via *Location/Geolocation*, *TransportMovement/departureLocation* and *Piece*        |          |
 
 ## Matching table FIW
